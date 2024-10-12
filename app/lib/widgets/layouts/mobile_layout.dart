@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 
 import '../mobile_layout_widgets/all_expenses_and_quick_invoice_section.dart';
+import '../mobile_layout_widgets/my_card_income_transaction_section.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({
@@ -17,6 +18,7 @@ class MobileLayout extends StatelessWidget {
       child: Column(
         children: [
           AllExpansesAndQuickInvoiceSection(),
+          MyCardAndIncomeAndTransactionSection(),
         ],
       ),
     );
