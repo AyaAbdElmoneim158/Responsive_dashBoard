@@ -6,7 +6,7 @@ class Assets {
   static const String imageBalance = "assets/balance.svg";
   static const String imageCardBackImage = "assets/cardBackImage.png";
   static const String imageDashboard = "assets/dashboard.svg";
-  static const String imageExpences = "assets/expences.svg";
+  static const String imageExpenses = "assets/expenses.svg";
   static const String imageFrame1 = "assets/Frame1.svg";
   static const String imageFrame2 = "assets/Frame2.svg";
   static const String imageGallery = "assets/gallery.svg";

@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
-import '../../utils/app_styles.dart';
+import '../mobile_layout_widgets/all_expenses_and_quick_invoice_section.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({
@@ -13,10 +13,11 @@ class MobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     log("${MediaQuery.of(context).size.width}Mobile layout");
 
-    return Center(
-      child: Text(
-        "Mobile Layout",
-        style: AppStyles.semiBold20(context),
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          AllExpansesAndQuickInvoiceSection(),
+        ],
       ),
     );
   }
