@@ -41,7 +41,7 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
             padding: const EdgeInsets.only(top: 20),
             child: DrawerItem(
               model: drawerItems[index],
-              iSactive: active == index,
+              isActive: active == index,
             ),
           ),
         );
