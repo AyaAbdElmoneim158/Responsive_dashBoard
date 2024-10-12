@@ -2,6 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import '../../utils/app_styles.dart';
+import '../custom_drawer.dart';
+import 'mobile_layout.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
@@ -10,11 +12,19 @@ class TabletLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     log("${MediaQuery.of(context).size.width}Tablet layout");
 
-    return Center(
-      child: Text(
-        "Tablet Layout",
-        style: AppStyles.semiBold20(context),
-      ),
+    return const Row(
+      children: [
+        Expanded(child: CustomDrawer()),
+        SizedBox(width: 25),
+        Expanded(
+          flex: 3,
+          child: Padding(
+            padding: EdgeInsets.only(top: 40),
+            child: MobileLayout(),
+          ),
+        ),
+        SizedBox(width: 25),
+      ],
     );
   }
 }
