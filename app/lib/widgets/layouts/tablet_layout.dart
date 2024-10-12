@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import '../../utils/app_styles.dart';
 import '../custom_drawer.dart';
 import 'mobile_layout.dart';
 
